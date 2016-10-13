@@ -1,5 +1,5 @@
 
-import HeaderSmall from '../../common/HeaderSmall';
+import HeaderSmall from '../../common/Headers/HeaderSmall/HeaderSmall';
 
 import React from 'react'
 
@@ -8,10 +8,10 @@ class Home extends React.Component {
     return (
         <div>
             <HeaderSmall
-                text = "About me"
+                text = "About!"
             />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            You've landed on the about page, You can go to //localhost:2900/About and land straight here if you wish
           </p>
         </div>
     )

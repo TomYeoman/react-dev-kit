@@ -1,20 +1,13 @@
+
 import express from 'express';
 import path from 'path';
-import bodyParser from 'body-parser';
 
 import webpack from 'webpack'
 import webpackMiddleware from 'webpack-dev-middleware';
 import webpackHotMiddleware from 'webpack-hot-middleware';
 import webpackConfig from '../webpack.config.dev.js';
 
-import users from './routes/users';
-
 let app = express();
-
-
-// We need to create a post request to users, Define the API we will users
-app.use(bodyParser.json());
-app.use('/api/users', users);
 
 const compiler = webpack(webpackConfig);
 
@@ -29,4 +22,4 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(3100, () => console.log("Running on localhost 3000"))
+app.listen(3100, () => console.log("Running on localhost 3100"))

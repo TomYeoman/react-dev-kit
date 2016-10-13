@@ -1,33 +1,21 @@
 
-import HeaderSmall from '../../common/HeaderSmall';
-import HeaderLarge from '../../common/HeaderLarge';
-import LightHeader from '../../common/LightHeader';
+import HeaderSmall from '../../common/Headers/HeaderSmall/HeaderSmall';
 
 import React from 'react'
 
-let Home = React.createClass({
-  componentDidMount: function() {
-    let menuItems = document.querySelectorAll("#main-menu li");
-
-    for (var i = 0; i < menuItems.length; i++) {
-      menuItems[i].classList.remove("active");
-    }
-
-    document.getElementById("HomeMenuItem").classList.add("active");
-  },
-
+class Home extends React.Component {
   render () {
     return (
         <div>
             <HeaderSmall
-                text = "You've landed on home!"
+                text = "You've landed on home"
             />
           <p>
-            Click on some tabs to move about
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
     )
   }
-});
+};
 
 export default Home;

@@ -3,59 +3,44 @@ import {Link} from 'react-router'
 
 export default () => {
     return (
-        <nav className="navbar navbar-default">
-            <div className="container-fluid">
-                <div className="navbar-header">
-                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                    <Link to="/" className="navbar-brand" href="#">Project name</Link>
-                </div>
-
-                <div id="main-menu" className="navbar-collapse collapse">
-                    <ul className="nav navbar-nav">
-                        <li id="HomeMenuItem"><Link to="/Home" href="#">Home</Link></li>
-                        <li id="AboutMenuItem"><Link to="/About" href="#">About</Link></li>
-                        <li id="ContactMenuItem"><Link to="/Contact" href="#">Contact</Link></li>
-                        <li className="dropdown">
-                            <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span className="caret"></span></a>
-                            <ul className="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" className="divider"></li>
-                                <li className="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul className="nav navbar-nav navbar-right">
-                        <li className="dropdown">
-                            <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Elements <span className="caret"></span></a>
-                            <ul className="dropdown-menu">
-                                <li><Link to="/designpatterns/Headers" href="#">Headers</Link></li>
-                                <li><Link to="/designpatterns/Form" href="#">Forms</Link></li>
-                                <li><Link to="/designpatterns/ColorPalette" href="#">Color Palette</Link></li>
-                                <li><Link to="/designpatterns/Slabs" href="#">Slabs</Link></li>
-                                <li><Link to="/designpatterns/tabs" href="#">Tabs</Link></li>
-                                <li><Link to="/designpatterns/inputs" href="#">Inputs</Link></li>
-                                <li><Link to="/designpatterns/shortcuts" href="#">Shortcuts</Link></li>
-                                <li><Link to="/designpatterns/images" href="#">Images</Link></li>
-                                <li><Link to="/designpatterns/buttons" href="#">Buttons</Link></li>
-                                <li><Link to="/designpatterns/modals" href="#">Modals / Popups</Link></li>
-                                <li><Link to="/designpatterns/font" href="#">Font</Link></li>
-                                <li><Link to="/designpatterns/progressbars" href="#">Progress Bars</Link></li>
-                                <li><Link to="/designpatterns/tables" href="#">Tables</Link></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+      <nav className="navbar navbar-default">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
             </div>
+            <div id="navbar" className="navbar-collapse collapse" aria-expanded="false">
+              <ul id="main-menu" className="nav navbar-nav">
+                <li id="HomeMenuItem"><Link to="/Home" href="#">Home</Link></li>
+                <li id="ProductsMenuItem" className="dropdown">
+                    <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
+                    <ul className="dropdown-menu">
+                        <li><Link to="/Product1" href="#">Product1</Link></li>
+                        <li><Link to="/Product2" href="#">Product2</Link></li>
+                        <li><Link to="/Product3" href="#">Product3</Link></li>
+                        <li><Link to="/Product4" href="#">Product4</Link></li>
+                        <li><Link to="/Product5" href="#">Product5</Link></li>
+                    </ul>
+                </li>
+                <li id="AboutMenuItem"><Link to="/About" href="#">About</Link></li>
+                <li id="ContactMenuItem"><Link to="/Contact" href="#">Contact</Link></li>
+              </ul>
+              <ul className="nav navbar-nav navbar-right">
+                  <li className="dropdown">
+                      <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Right menu <span className="caret"></span></a>
+                      <ul className="dropdown-menu">
+                          <li><Link to="/designpatterns/Headers" href="#">Action</Link></li>
+                          <li><Link to="/designpatterns/Headers" href="#">Another action</Link></li>
+                      </ul>
+                  </li>
+              </ul>
+            </div>
+            
+          </div>
         </nav>
     )
 }

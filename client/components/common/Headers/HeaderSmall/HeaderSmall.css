@@ -1,0 +1,13 @@
+.container{
+    background: #565a5c;
+    border-radius: 5px;
+    padding-left: 20px;
+    color: #fff;
+    padding: 5px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.header{
+    padding-left: 15px;
+}
