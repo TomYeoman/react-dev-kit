@@ -1,8 +1,15 @@
 # react-dev-kit
-Basic started for react application
+Basic starter kit for react application
+
+Installation
+-----------
+
+"npm i"
+"npm run server"
 
 - Babel
 - ES6/ 7
 - Webpack
 - Express
 - Hot Reloading
+- CSS Modules
